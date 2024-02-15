@@ -87,7 +87,7 @@ TARGET_NO_RADIOIMAGE := true
 
 # Framework Matrix
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/device_framework_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/lineage/config/device_framework_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/aosp/config/device_framework_matrix.xml
 
 # HIDL Manifest
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
@@ -110,14 +110,6 @@ TARGET_KEYMASTER_VARIANT := samsung
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
-
-# Lineage health
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/charging_enabled
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED := 1
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED := 0
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := true
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE := true
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE := false
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 61865984
@@ -157,7 +149,7 @@ BOARD_SECCOMP_POLICY += $(COMMON_PATH)/seccomp
 VENDOR_SECURITY_PATCH := 2023-12-01
 
 # SELinux
-include device/lineage/sepolicy/exynos/sepolicy.mk
+include device/custom/sepolicy/exynos/sepolicy.mk
 BOARD_SEPOLICY_TEE_FLAVOR := teegris
 include device/samsung_slsi/sepolicy/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
