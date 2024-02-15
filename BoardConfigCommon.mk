@@ -146,7 +146,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 BOARD_SECCOMP_POLICY += $(COMMON_PATH)/seccomp
 
 # Security
-VENDOR_SECURITY_PATCH := 2023-12-01
+VENDOR_SECURITY_PATCH := 2024-01-01
 
 # SELinux
 include device/custom/sepolicy/exynos/sepolicy.mk
