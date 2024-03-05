@@ -101,10 +101,6 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.samsung \
     init.udfps.rc
 
-# FlipFlap
-PRODUCT_PACKAGES += \
-    FlipFlap
-
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl:64 \
@@ -138,10 +134,6 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
-
 # Kernel
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
@@ -155,10 +147,6 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung \
     libcrypto-v33 \
     libkeymaster4_1support.vendor:64
-
-# Livedisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.universal9830
 
 # Media
 PRODUCT_PACKAGES += \
@@ -308,9 +296,11 @@ PRODUCT_PACKAGES += \
     init.vendor.rilcommon.rc \
     secril_config_svc
 
-# SamsungDoze
-PRODUCT_PACKAGES += \
-    SamsungDoze
+# Screen density
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+# A list of dpis to select prebuilt apk, in precedence order.
+PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 
 # Secure Element
 PRODUCT_PACKAGES += \
@@ -344,10 +334,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
-
-# Touch features
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.samsung
 
 # TUI
 PRODUCT_PACKAGES += \
