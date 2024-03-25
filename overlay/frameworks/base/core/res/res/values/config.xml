@@ -969,4 +969,10 @@
          running in WAL mode.
          Choices are: FULL, NORMAL, OFF. -->
     <string name="db_wal_sync_mode" translatable="false">NORMAL</string>
+
+    <!-- Whether device has a screen with a higher aspect ratio -->
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
+    <!-- Whether the device supports wireless charging or not -->
+    <bool name="config_deviceSupportsWirelessCharging">true</bool>
 </resources>
