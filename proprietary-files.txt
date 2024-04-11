@@ -197,8 +197,6 @@ vendor/etc/plmn_se13.bin
 -vendor/lib64/libvkmanager_vendor.so
 -vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
 -vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so
--vendor/lib64/vendor.samsung.hardware.radio@2.0.so
--vendor/lib64/vendor.samsung.hardware.radio@2.1.so
 
 # RIL - from x1s - G980FXXSCDUK1
 -vendor/bin/hw/rild|85f98906d824830d0e132fb63ea6adb1b99b08b9

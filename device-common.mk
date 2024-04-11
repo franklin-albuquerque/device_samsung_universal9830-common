@@ -308,7 +308,14 @@ PRODUCT_PACKAGES += \
     init.baseband.rc \
     init.vendor.rilchip.rc \
     init.vendor.rilcommon.rc \
-    secril_config_svc
+    libdsms_vendor:64
+
+PRODUCT_PACKAGES += \
+    secril_config_svc \
+    sehradiomanager
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/ril/sehradiomanager.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sehradiomanager.conf
 
 # SamsungDoze
 PRODUCT_PACKAGES += \
