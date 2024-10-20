@@ -72,7 +72,7 @@ BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 9432989696
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext vendor product odm
 BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
 BOARD_SUPER_PARTITION_SIZE := 9437184000
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/aosp/config/BoardConfigReservedSize.mk
 
 # DTB
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
@@ -102,7 +102,7 @@ TARGET_NO_RADIOIMAGE := true
 # Framework Matrix
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/device_framework_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += hardware/samsung/vintf/samsung_framework_compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/lineage/config/device_framework_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/aosp/config/device_framework_matrix.xml
 
 # HIDL Manifest
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
